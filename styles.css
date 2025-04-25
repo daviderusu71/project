@@ -1,0 +1,838 @@
+/* Resetare stiluri */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stiluri generale */
+/* Fundal pentru întreaga pagină */
+body {
+    background-image: url('/imagine/pexels-harsh-kukadiya-244412142-31756517.jpg'); /* URL-ul imaginii */
+    background-size: cover; /* Imaginea va acoperi întreaga pagină */
+    background-position: center; /* Centrarea imaginii */
+    background-attachment: fixed; /* Fixează imaginea pentru un efect de parallax */
+    height: 100vh; /* Asigură-te că imaginea ocupă întreaga înălțime a paginii */
+    margin: 0;
+}
+
+/* Opțional - textul și alte elemente pentru a fi vizibile pe fundal */
+.header {
+    color: white; /* Culoare textului pentru a fi vizibil pe fundal */
+    padding: 50px;
+    text-align: center;
+}
+
+/* Efect de parallax */
+.parallax {
+    background-image: url('/imagine/chris-lynch-bvMxVWeNj18-unsplash.jpg');
+    height: 100vh; /* Înălțimea secțiunii */
+    background-attachment: fixed; /* Fixează imaginea pentru efectul parallax */
+    background-position: center;
+    background-size: cover;
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .contact-info {
+    background-color: #13141c;
+    color: #ccc;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 0.9rem;
+}
+
+header .contact-info i {
+    margin-right: 5px;
+    color: #4CAF50;
+}
+
+header .contact-info span {
+    margin: 0 15px;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 0.9rem;
+}
+
+.contact-right i {
+    margin-right: 5px;
+    color: #4CAF50;
+}
+
+/* Secțiuni */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section#despre img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Servicii */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Portofoliu */
+.exemple {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.exemplu img {
+    width: 200px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.exemplu img:hover {
+    transform: scale(1.05);
+}
+
+/* Formular de contact */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer .social a {
+    color: #4CAF50;
+    margin: 0 5px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .social a:hover {
+    color: #fff;
+}
+
+#hero {
+    background: linear-gradient(to right, #1f4037, #99f2c8);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #388E3C;
+}
+
+#despre {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#despre .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#despre h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#despre p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#servicii {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#servicii .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#servicii h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.servicii-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.serviciu {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.serviciu i {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.serviciu h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.serviciu p {
+    font-size: 1rem;
+    color: #666;
+}
+
+#portofoliu {
+    background-color: #f5f5f5;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#portofoliu .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#portofoliu h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.portofoliu-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.proiect {
+    width: 30%;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+}
+
+.proiect img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.proiect h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.proiect p {
+    font-size: 1rem;
+    color: #666;
+}
+
+#testimoniale {
+    background-color: #f9f9f9;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#testimoniale .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#testimoniale h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.testimoniale-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    width: 30%;
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.testimonial strong {
+    font-weight: bold;
+    color: #333;
+}
+
+#faq {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#faq .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#faq h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.faq-item {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+#contact {
+    background-color: #f5f5f5;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#contact .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #388E3C;
+}
+
+.contact-info {
+    margin-top: 40px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Efect de hover general pentru carduri */
+.proiect, .serviciu, .testimonial, .faq-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proiect:hover, .serviciu:hover, .testimonial:hover, .faq-item:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 🎯 Hover effect pentru toate cardurile */
+.proiect, .serviciu, .testimonial, .faq-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proiect:hover, .serviciu:hover, .testimonial:hover, .faq-item:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.apare {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 🔘 Hover animat pe buton */
+.btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: left 0.3s ease;
+    z-index: 0;
+}
+
+.btn:hover::before {
+    left: 0;
+}
+
+.btn {
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* 🧭 Hover animat pe linkuri din navbar */
+nav a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #00ffd5;
+    transition: all 0.3s ease;
+}
+
+nav a:hover::after {
+    left: 0;
+    width: 100%;
+}
+.fade-section.orizontal {
+    padding: 60px 40px;
+    background: #f8f8f8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+/* fade-up */
+.fade-up {
+    transform: translateY(30px);
+}
+.fade-up.apare {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* fade-left */
+.fade-left {
+    transform: translateX(-30px);
+}
+.fade-left.apare {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* fade-right */
+.fade-right {
+    transform: translateX(30px);
+}
+.fade-right.apare {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* fade-down */
+.fade-down {
+    transform: translateY(-30px);
+}
+.fade-down.apare {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Delay pe fade-in */
+.delay-1 {
+    transition-delay: 0.2s;
+}
+.delay-2 {
+    transition-delay: 0.4s;
+}
+.delay-3 {
+    transition-delay: 0.6s;
+}
+.delay-4 {
+    transition-delay: 0.8s;
+}
+
+.serviciu {
+    background: white;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+    width: 280px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.iconita {
+    font-size: 36px;
+    color: #00b894;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Efect la hover pe toată secțiunea */
+.serviciu:hover .iconita {
+    transform: scale(1.2) rotate(8deg);
+    color: #0984e3;
+}
+
+.verde { color: #00b894; }
+.galben { color: #fdcb6e; }
+.albastru { color: #0984e3; }
+.roz { color: #e84393; }
+
+.serviciu:hover .verde { color: #00cec9; }
+.serviciu:hover .galben { color: #e17055; }
+.serviciu:hover .albastru { color: #6c5ce7; }
+.serviciu:hover .roz { color: #d63031; }
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    max-width: 200px;
+    text-align: center;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.serviciu:hover .tooltip {
+    display: block;
+    opacity: 1;
+}
+
+.serviciu {
+    position: relative;
+}
+
+/* Tooltip-uri - baza */
+.tooltip {
+    display: none;
+    position: absolute;
+    color: #fff;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    max-width: 220px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 9999; /* Asigură-te că apare deasupra */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Umbră pentru a se vedea mai clar */
+}
+
+
+/* Tooltip cu săgeată */
+.serviciu {
+    position: relative;
+}
+
+.serviciu:hover .tooltip {
+    display: block;
+    opacity: 1;
+}
+
+/* Tooltip top */
+.tooltip.top {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00b894;
+    border: 2px solid #00b894;
+}
+
+.tooltip.top::after {
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top-color: #00b894; /* Săgeata va fi de aceeași culoare cu tooltip-ul */
+}
+
+/* Tooltip bottom */
+.tooltip.bottom {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fdcb6e;
+    border: 2px solid #fdcb6e;
+}
+
+.tooltip.bottom::after {
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top-color: #fdcb6e; /* Săgeata va fi de aceeași culoare cu tooltip-ul */
+}
+
+/* Tooltip left */
+.tooltip.left {
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    background-color: #0984e3;
+    border: 2px solid #0984e3;
+}
+
+.tooltip.left::after {
+    top: 50%;
+    right: -8px;
+    transform: translateY(-50%);
+    border-left-color: #0984e3; /* Săgeata va fi de aceeași culoare cu tooltip-ul */
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}
+
+/* Tooltip right */
+.tooltip.right {
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    background-color: #e84393;
+    border: 2px solid #e84393;
+}
+
+.tooltip.right::after {
+    top: 50%;
+    left: -8px;
+    transform: translateY(-50%);
+    border-left-color: #e84393; /* Săgeata va fi de aceeași culoare cu tooltip-ul */
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}
+
+
+/* Poziționare tooltip la top */
+.tooltip[data-position="top"] {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Poziționare tooltip la bottom */
+.tooltip[data-position="bottom"] {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Poziționare tooltip la left */
+.tooltip[data-position="left"] {
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+}
+
+/* Poziționare tooltip la right */
+.tooltip[data-position="right"] {
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+}
+
+/* Secțiunea cu imagine */
+.imagine-secțiune {
+    background-image: url('path_către_imagine.jpg'); /* Calea imaginii */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
